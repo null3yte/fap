@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 import sys
 
+
 def single(url: str) -> set:
     response = requests.get(url)
     content = response.text
@@ -43,9 +44,6 @@ def mass(url: str) -> set:
         for tag in script_tags:
             variables = re.findall(r'var\s+(\w+)', tag.string)
             keywords.update(variables)
-    else:
-        print(f"status code {response.status_code}: {url}")
-        sys.exit(0)
     return keywords
 
 
