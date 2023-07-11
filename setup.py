@@ -5,7 +5,7 @@ os.system('pip install -r requirements.txt')
 
 setup(
     name='fap',
-    version='0.2',
+    version='1',
     py_modules=['fap'],
     entry_points={
         'console_scripts': [
