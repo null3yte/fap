@@ -6,10 +6,6 @@
 
 ## Installation
 ```bash
-pip install fap
-```
-or
-```bash
 git clone https://github.com/null3yte/fap.git
 cd fap
 python setup.py install
